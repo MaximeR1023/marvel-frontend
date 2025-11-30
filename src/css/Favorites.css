@@ -1,0 +1,41 @@
+.favorites-page {
+  min-height: 100vh;
+}
+
+.favorites-page .container {
+  flex: 1;
+}
+
+.favorites-page > .container > section {
+  margin-bottom: 20px;
+}
+
+.favorites-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.favorite-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.favorite-item > img {
+  height: 75px;
+}
+
+.favorite-item svg {
+  font-size: 25px;
+}
+
+.favorite-item button {
+  cursor: pointer;
+}

@@ -1,0 +1,49 @@
+header {
+  margin-bottom: 50px;
+  border-bottom: 1px solid lightgray;
+  background-color: #202020;
+  width: 100%;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 100;
+}
+
+header button {
+  cursor: pointer;
+}
+
+header img {
+  height: 60px;
+}
+
+header img {
+  cursor: pointer;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header menu {
+  display: flex;
+  gap: 50px;
+}
+
+header menu button:hover {
+  border-bottom: 2px solid red;
+  font-weight: bold;
+}
+
+header .search > label > input {
+  all: unset;
+  background-color: rgb(186, 186, 186);
+  width: 250px;
+  cursor: text;
+  color: black;
+  padding: 2px;
+  font-size: 10px;
+  height: 25px;
+  border-radius: 2px;
+}

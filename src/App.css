@@ -1,0 +1,27 @@
+body {
+  background-color: #202020;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+}
+
+a,
+button {
+  all: unset;
+}
+
+main {
+  padding-top: 125px;
+  background: #b80000;
+  background: radial-gradient(
+    circle,
+    rgba(184, 0, 0, 1) 0%,
+    rgba(255, 0, 0, 1) 55%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  min-height: 100vh;
+}
