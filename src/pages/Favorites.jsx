@@ -18,7 +18,11 @@ const FavoritesPage = () => {
       const comicIds = getFavorites("comics");
       if (comicIds.length > 0) {
         const comicResults = await Promise.all(
-          comicIds.map((id) => axios.get(`http://localhost:3000/comic/${id}`))
+          comicIds.map((id) =>
+            axios.get(
+              `https://site--marvel-backend--sw2wxzy5rpkz.code.run/comic/${id}`
+            )
+          )
         );
         setComicsData(comicResults.map((res) => res.data));
       }
@@ -28,7 +32,9 @@ const FavoritesPage = () => {
       if (charIds.length > 0) {
         const charResults = await Promise.all(
           charIds.map((id) =>
-            axios.get(`http://localhost:3000/character/${id}`)
+            axios.get(
+              `https://site--marvel-backend--sw2wxzy5rpkz.code.run/character/${id}`
+            )
           )
         );
         setCharactersData(charResults.map((res) => res.data));

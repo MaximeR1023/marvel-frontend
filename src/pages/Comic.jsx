@@ -40,7 +40,9 @@ const Comic = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/comic/${id}`);
+        const response = await axios.get(
+          `https://site--marvel-backend--sw2wxzy5rpkz.code.run/comic/${id}`
+        );
         console.log(response.data);
         setData(response.data);
         setIsLoading(false);

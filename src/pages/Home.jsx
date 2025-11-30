@@ -20,7 +20,9 @@ const Home = ({ search }) => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/characters?&name=${search}&skip=${page * 100}`
+          `https://site--marvel-backend--sw2wxzy5rpkz.code.run/characters?&name=${search}&skip=${
+            page * 100
+          }`
         );
         setData(response.data);
         console.log(response.data);

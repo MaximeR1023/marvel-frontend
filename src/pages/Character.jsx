@@ -25,11 +25,13 @@ const Character = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:3000/character/${id}`
+          `https://site--marvel-backend--sw2wxzy5rpkz.code.run/character/${id}`
         );
         // console.log(response.data);
         setData(response.data);
-        const response2 = await axios.get(`http://localhost:3000/comics/${id}`);
+        const response2 = await axios.get(
+          `https://site--marvel-backend--sw2wxzy5rpkz.code.run/comics/${id}`
+        );
         setData2(response2.data);
         setIsLoading(false);
       } catch (error) {
